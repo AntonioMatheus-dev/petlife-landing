@@ -1,13 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Petlife</title>
-  </head>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  
   <body>
     <header>
-      <a href="index.html"><img src="imagens/logo.svg" alt="Logo Petlife" /></a>
+      <a href="index.html">
+        <img src="imagens/logo-white.svg" alt="Logo Petlife" /></a>
       <nav>
         <a href="#inicio">Inicio</a>
         <a href="#clinica">Clinica</a>
@@ -29,23 +36,22 @@
           <h1>
             Garanta uma vida longa e cheia de alegria para o seu melhor amigo
           </h1>
-          <p>
+          <p class="paragrafo">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
             voluptatum quaerat aspernatur cumque accusamus repudiandae odio,
             exercitationem, ullam dolores enim in consectetur optio
             necessitatibus placeat alias delectus hic, a ut.
           </p>
-          <a href="https://wa.me/552223242526" target="_blank"
-            >Marque uma Consulta</a
-          >
-          <a href="#clinica"> Conheça nossa clinica</a>
+          <a class="botao" href="https://wa.me/552223242526" target="_blank">Marque uma Consulta</a>
+          <a class="botao_transparente" href="#clinica"> Conheça nossa clinica</a>
         </div>
+        <img class="absolute" src="imagens/shape.svg" alt="">
       </section>
 
       <section id="clinica">
         <div>
           <h2>Cuidado Veterinário de Qualidade</h2>
-          <p>
+          <p class="paragrafo">
             Na Petlife, oferecemos serviços veterinários abrangentes para
             garantir a saúde e o bem-estar do seu pet. Nossa equipe de
             profissionais dedicados está pronta para cuidar do seu melhor amigo
@@ -79,7 +85,7 @@
           height="480"
           loading="lazy"
         />
-        <p>
+        <p class="paragrafo">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dicta
           mollitia tempora nobis! Beatae voluptatibus hic, reiciendis quo nihil
           qui. Libero ex perspiciatis, nulla temporibus architecto non
@@ -95,41 +101,43 @@
           height="480"
           loading="lazy"
         />
-        <div>
-          <h2>Ficou alguma duvida?</h2>
-        </div>
-        <div>
-          <h3>Quais são os serviços oferecidos pela Petlife?</h3>
-          <img src="imagens/arrow-down.svg" alt="" />
-          <p>
-            Oferecemos uma ampla gama de serviços veterinários, incluindo
-            consultas de rotina, vacinação, cirurgias, cuidados odontológicos e
-            muito mais.
-          </p>
-        </div>
-        <div>
-          <h3>Como posso marcar uma consulta?</h3>
-          <img src="imagens/arrow-down.svg" alt="" />
-          <p>
-            Você pode marcar uma consulta entrando em contato conosco pelo
-            telefone ou através do nosso site.
-          </p>
-        </div>
-        <div>
-          <h3>A Petlife oferece serviços de emergência?</h3>
-          <img src="imagens/arrow-down.svg" alt="" />
-          <p>
-            Sim, temos um serviço de emergência 24 horas para atender às
-            necessidades urgentes do seu pet.
-          </p>
-        </div>
-        <div>
-          <h3>Quais são os horários de funcionamento da clínica?</h3>
-          <img src="imagens/arrow-down.svg" alt="" />
-          <p>
-            Nossa clínica está aberta de segunda a sexta-feira, das 8h às 18h, e
-            aos sábados, das 9h às 14h.
-          </p>
+        <div class="duvidas-conteudo">
+          <div>
+            <h2>Ficou alguma duvida?</h2>
+
+          <div class="duvidas">
+            <h3>Quais são os serviços oferecidos pela Petlife?</h3>
+            <img src="imagens/arrow-down.svg" alt="" />
+            <p class="paragrafo">
+              Oferecemos uma ampla gama de serviços veterinários, incluindo
+              consultas de rotina, vacinação, cirurgias, cuidados odontológicos e
+              muito mais.
+            </p>
+          </div>
+          <div class="duvidas">
+            <h3>Como posso marcar uma consulta?</h3>
+            <img src="imagens/arrow-down.svg" alt="" />
+            <p class="paragrafo">
+              Você pode marcar uma consulta entrando em contato conosco pelo
+              telefone ou através do nosso site.
+            </p>
+          </div>
+          <div class="duvidas">
+            <h3>A Petlife oferece serviços de emergência?</h3>
+            <img src="imagens/arrow-down.svg" alt="" />
+            <p class="paragrafo">
+              Sim, temos um serviço de emergência 24 horas para atender às
+              necessidades urgentes do seu pet.
+            </p>
+          </div>
+          <div class="duvidas">
+            <h3>Quais são os horários de funcionamento da clínica?</h3>
+            <img src="imagens/arrow-down.svg" alt="" />
+            <p class="paragrafo">
+              Nossa clínica está aberta de segunda a sexta-feira, das 8h às 18h, e
+              aos sábados, das 9h às 14h.
+            </p>
+          </div>
         </div>
       </section>
     </main>
@@ -142,7 +150,7 @@
           mais feliz
         </p>
       </div>
-      <strong>Links rapidos</strong>
+      <strong class="titulo">Links rapidos</strong>
       <nav>
         <a href="#inicio">Inicio</a>
         <a href="#clinica">Clinica</a>
@@ -150,7 +158,7 @@
         <a href="#duvidas">Duvida</a>
       </nav>
       <div>
-        <strong> Encontro-nos</strong>
+        <strong class="titulo"> Encontro-nos</strong>
         <p>
           Watsap:
           <a href="https://wa.me/552223242526" target="_blank"
@@ -167,7 +175,7 @@
       </div>
     </footer>
 
-    <div>
+    <div id="creditos">
       Desenvolvido por:
       <a href="https://github.com/AntonioMatheus-dev" target="_blank"
         >Antonio_Matheus</a
