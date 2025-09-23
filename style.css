@@ -179,3 +179,61 @@ footer p a{
 #creditos a{
     color: #ff9a6c;  
 }
+
+@media(max-width: 1024px){
+  header, #inicio, #clinica, #farmacia, #duvidas, footer{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  header nav a{
+    padding: 16px;
+  }
+
+  #inicio, #clinica, #duvidas{
+    flex-direction: column;
+    text-align: center;
+  }
+  #inicio img,
+  #clinica img,
+  #farmacia img,
+  #duvidas img {
+  max-width: 100%;
+  height: auto;
+  }  
+
+  
+  #inicio div,
+  #clinica div,
+  #duvidas .duvidas-conteudo {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  footer nav a {
+    margin: 8px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  .botao, .botao_transparente {
+    display: block;
+    margin: 12px auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .duvidas img {
+    top: 24px;
+    right: 16px;
+  }
+}
